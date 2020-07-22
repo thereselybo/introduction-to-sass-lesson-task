@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: getColour(light-grey);
+    color: getColour(dark-grey);
+    margin: 0;
+    font-family: $font-primary;
+}
+
+.wrapper {
+    flex: 1 0 auto;
+    padding-bottom: 2rem;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1100px;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

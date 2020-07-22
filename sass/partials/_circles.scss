@@ -1,0 +1,40 @@
+.circle {
+    background: white;
+    border-radius: 100%;
+    box-shadow: $box-shadow;
+    width: 39px;
+    height: 39px;
+    border: 3px solid transparent;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+
+    &.one {
+        width: 116px;
+        height: 116px;
+        border-color: getColour(accent);
+    }
+
+    &.two {
+        width: 211px;
+        height: 211px;
+        border-color: getColour(secondary);
+    }
+
+    &.three {
+        width: 268px;
+        height: 268px;
+        border-color: getColour(primary);
+    }
+}
+
+.circle-container {
+    margin-top: 2.3rem;
+
+    > div {
+        margin-bottom: 2rem;
+    }
+}

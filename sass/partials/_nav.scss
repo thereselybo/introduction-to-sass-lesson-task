@@ -1,0 +1,33 @@
+nav {
+    background: white;
+
+    .container {
+        @extend .container-flex;
+        justify-content: start;
+    }
+
+    .logo {
+        font-size: 1.1em;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+    }
+
+    li {
+        margin-left: 1.5em;
+    }
+
+    a {
+        color: getColour(primary);
+        text-decoration: none;
+    }
+
+    a.active {
+        padding: 0.4em 0.4em 0.1em;
+        border-bottom: 4px solid getColour(secondary);
+    }
+}

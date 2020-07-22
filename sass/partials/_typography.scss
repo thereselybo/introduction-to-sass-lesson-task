@@ -1,0 +1,19 @@
+h1 {
+    font-family: $font-headings;
+    font-weight: normal;
+    width: 100%;
+    margin-bottom: 0.5rem;
+
+    @media (min-width: $tablet-width) {
+        margin-top: 3rem;
+    }
+}
+
+p {
+    font-size: 0.9em;
+    text-align: left;
+
+    &.highlight {
+        color: getColour(secondary);
+    }
+}

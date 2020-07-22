@@ -1,0 +1,56 @@
+footer {
+    background: getColour(secondary);
+    flex-shrink: 0;
+    color: white;
+    padding: 1.5rem 1rem;
+    font-size: 0.8rem;
+
+    @media (min-width: $tablet-width) {
+        padding: 1rem;
+    }
+
+    .container {
+        @extend .container-flex;
+        flex-direction: column;
+
+        @media (min-width: $tablet-width) {
+            flex-direction: row;
+        }
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+
+        a:hover {
+            color: getColour(primary);
+        }
+    }
+
+    input {
+        border: none;
+        height: 25px;
+        padding: 0.3em;
+        width: 150px;
+
+        @media (min-width: $tablet-width) {
+            width: 225px;
+        }
+    }
+
+    button {
+        background: darken(getColour(secondary), 10%);
+        border: none;
+        height: 25px;
+        color: white;
+        width: 98px;
+    }
+
+    .terms {
+        margin: 1.5rem 0;
+
+        @media (min-width: $tablet-width) {
+            margin: 0;
+        }
+    }
+}
