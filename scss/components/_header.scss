@@ -1,0 +1,44 @@
+header {
+    background: white;
+    margin: 0; 
+
+    .nav__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (min-width: 768px) {
+            justify-content: start;
+        }
+    
+        .nav__logo {
+            color: $blue-black;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    
+        .nav__ul {
+            display: flex;
+        }
+    
+        .nav__li {
+            list-style: none;
+            padding: 8px;
+        }
+    
+        a {
+            text-decoration: none;
+            color: $dark-gray;
+            padding: 8px;
+        }
+
+        a.is-active {
+            border-bottom: 3px solid $turquoise;
+            // height: 2px;
+            // width: 100%;
+        }
+        
+    }
+    
+}
+

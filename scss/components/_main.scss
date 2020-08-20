@@ -1,0 +1,35 @@
+main {
+    margin: 0;
+    padding-top: 24px;
+
+    .main__container {
+        flex-direction: column;
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+    }
+
+    .main__text--green {
+        color: $turquoise;
+    }
+
+    .main__circle--small {
+        @include circle-border(white);
+        @include circle-size(39px);
+    }
+
+    .main__circle--1 {
+        @include circle-border($orange);
+        @include circle-size(116px);
+    }
+
+    .main__circle--2 {
+        @include circle-border($turquoise);
+        @include circle-size(211px);
+    }
+
+    .main__circle--3 {
+        @include circle-border($blue-black);
+        @include circle-size(268px);
+    }
+}

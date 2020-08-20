@@ -1,0 +1,51 @@
+footer {
+    color: white;
+    background: $turquoise;
+    // position: absolute;
+    // bottom: 0;
+    // width: 100vw;
+
+    flex-shrink: 0;
+    // display: flex;
+
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        margin: 16px auto;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    .footer__item {
+        text-align: center;
+        padding: 16px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer__form-signup {
+
+        input {
+            @extend .form-common;
+            border-radius: 3px;
+        }
+
+        button {
+            @extend .form-common;
+            margin-left: -6px;
+            color: white;
+            background: $dark-green;
+        }
+
+        ::placeholder {
+            color: $dark-gray;
+        }
+    }
+}
